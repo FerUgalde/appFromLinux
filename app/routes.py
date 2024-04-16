@@ -1,8 +1,9 @@
-from flask import Flask # from the flask module import Flask module
+from app import app
+#from flask import Flask # from the flask module import Flask module
 
-app = Flask(__name__)   # create an instance of the Flask class
+#app = Flask(__name__)   # create an instance of the Flask class
 
-@app.get("/")   # define decorator that maps view functions to routes
+@app.route("/")   # define decorator that maps view functions to routes
 def index():    # view functiion
     me = {  # dictionary# python dictionary
         "first_name": "Fernanda",   
