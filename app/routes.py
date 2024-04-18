@@ -11,3 +11,9 @@ def index():    # view functiion
         "is_online": True
     }
     return me   # when you return a dict from a view function, it becomes JSON
+
+
+#@app.post()
+#@app.put()
+#@app.patch()
+#@app.delete()
